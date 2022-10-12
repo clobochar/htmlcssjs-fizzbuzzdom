@@ -1,3 +1,10 @@
 body {
     background-color: #083B4C;
 }
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
