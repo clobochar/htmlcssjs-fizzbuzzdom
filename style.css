@@ -1,10 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 body {
     background-color: #083B4C;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
 }
 
 .title {
     display: flex;
     justify-content: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards-container {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100px;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+    background-color: #1389B2;
+    padding: 40px;
+}
+
+.fizz {
+    background-color: #0AD6A1;
 }
