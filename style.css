@@ -34,11 +34,15 @@ body {
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: white;
+    color: black;
     background-color: #1389B2;
     padding: 40px;
 }
 
 .fizz {
     background-color: #0AD6A1;
+}
+
+.buzz {
+    background-color: #FFD166;
 }
