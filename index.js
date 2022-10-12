@@ -6,13 +6,18 @@ for (let index = 1; index <= 100; index++) {
   let card_text = index;
 
   if (index % 3 == 0) {
-    card_class += " fizz";
+    card_class = "card fizz";
     card_text = "Fizz";
   }
 
   if (index % 5 == 0) {
-    card_class += " buzz";
+    card_class = "card buzz";
     card_text = "Buzz";
+  }
+
+  if (index % 3 == 0 && index % 15 == 0) {
+    card_class = "card fizzbuzz";
+    card_text = "Fizzbuzz";
   }
 
   const card = `<li class="${card_class}">${card_text}</li>`;
