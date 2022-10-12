@@ -1,25 +1,26 @@
 const ul = document.querySelector("ul.card-list");
-const card = document.querySelector("li.card");
 
 for (let index = 1; index <= 100; index++) {
-  let card_class = "card";
+  const card = document.createElement("li");
+  card.classList.add("card");
+
   let card_text = index;
 
   if (index % 3 == 0) {
-    card_class = "card fizz";
+    card.classList.add("fizz");
     card_text = "Fizz";
   }
 
   if (index % 5 == 0) {
-    card_class = "card buzz";
+    card.classList.add("buzz");
     card_text = "Buzz";
   }
 
   if (index % 3 == 0 && index % 15 == 0) {
-    card_class = "card fizzbuzz";
+    card.classList.add("fizzbuzz");
     card_text = "Fizzbuzz";
   }
 
-  const card = `<li class="${card_class}">${card_text}</li>`;
-  ul.innerHTML += card;
+  card.appendChild(document.createTextNode(card_text));
+  ul.appendChild(card);
 }
